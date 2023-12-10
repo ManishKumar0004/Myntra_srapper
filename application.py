@@ -25,7 +25,7 @@ def index():
     if request.method == 'POST':
         try:
           
-          DRIVER_PATH = r"C:/Users/HP/Desktop/chromedriver-win64/chromedriver.exe"
+          DRIVER_PATH = r"chromedriver.exe"
           service = Service(DRIVER_PATH)
           driver = webdriver.Chrome(service=service)
           searchString = request.form['content'].replace(" ","")
